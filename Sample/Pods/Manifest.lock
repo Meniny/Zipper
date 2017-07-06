@@ -1,0 +1,16 @@
+PODS:
+  - Zipper (1.0.0)
+
+DEPENDENCIES:
+  - Zipper (from `../`)
+
+EXTERNAL SOURCES:
+  Zipper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Zipper: d053991e473f21b698baca4e4de1287fae9548ae
+
+PODFILE CHECKSUM: f1247b516a5eb44d7246e75933f71347d106fd7a
+
+COCOAPODS: 1.2.1

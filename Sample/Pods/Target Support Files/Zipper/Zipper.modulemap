@@ -1,0 +1,6 @@
+framework module Zipper {
+  umbrella header "Zipper-umbrella.h"
+
+  export *
+  module * { export * }
+}

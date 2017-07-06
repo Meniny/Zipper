@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="If9-AA-5VG">
+                                <rect key="frame" x="137.5" y="120" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bhQ-re-VIj"/>
+                                    <constraint firstAttribute="width" constant="100" id="e1q-I0-HBW"/>
+                                </constraints>
+                                <state key="normal" title="Zip"/>
+                                <connections>
+                                    <action selector="zipThem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DCK-mR-dXK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUT-Hi-pf3">
+                                <rect key="frame" x="137.5" y="178" width="100" height="50"/>
+                                <state key="normal" title="Unzip"/>
+                                <connections>
+                                    <action selector="upzipThem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftM-V4-R2W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="If9-AA-5VG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6SB-5O-aLG"/>
+                            <constraint firstItem="If9-AA-5VG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Aeb-tC-C4w"/>
+                            <constraint firstItem="yUT-Hi-pf3" firstAttribute="top" secondItem="If9-AA-5VG" secondAttribute="bottom" constant="8" id="BzT-1K-sZv"/>
+                            <constraint firstItem="yUT-Hi-pf3" firstAttribute="width" secondItem="If9-AA-5VG" secondAttribute="width" id="RLs-Lk-ee0"/>
+                            <constraint firstItem="yUT-Hi-pf3" firstAttribute="centerX" secondItem="If9-AA-5VG" secondAttribute="centerX" id="VTu-a3-CCD"/>
+                            <constraint firstItem="yUT-Hi-pf3" firstAttribute="height" secondItem="If9-AA-5VG" secondAttribute="height" id="scf-ya-kBh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
