@@ -60,7 +60,7 @@ do {
   try fileManager.zip(item: resourcesURL, to: archive)
 } catch _ {}
 // or:
-guard let archive = Zip(url: archiveURL, accessMode: .create) else  { return }
+guard let archive = Zipper(url: archiveURL, accessMode: .create) else  { return }
 do {
   try archive.zip(item: resourcesURL)
 } catch _ {}
@@ -77,7 +77,7 @@ do {
   try fileManager.unzip(item: archiveURL, to: destinationURL)
 } catch _ {}
 // or:
-guard let archive = Zip(url: archiveURL, accessMode: .read) else  { return }
+guard let archive = Zipper(url: archiveURL, accessMode: .read) else  { return }
 do {
   try archive.unzip(to: destinationURL)
 } catch _ {}
@@ -87,7 +87,7 @@ do {
 
 ```swift
 var archiveURL = currentDirectoryURL.appendPathComponent("archive.zip")
-guard let archive = Zip(url: archiveURL, accessMode: .read) else  { return }
+guard let archive = Zipper(url: archiveURL, accessMode: .read) else  { return }
 guard let entry = archive["file.txt"] else { return }
 var destinationURL = currentDirectoryURL.appendPathComponent("output.txt")
 
@@ -106,7 +106,7 @@ var fileURL = currentDirectoryURL.appendPathComponent("file.ext")
 Adding:
 
 ``` swift
-guard let archive = Zip(url: archiveURL, accessMode: .update) else { return }
+guard let archive = Zipper(url: archiveURL, accessMode: .update) else { return }
 do {
     try archive.addEntry(with: fileURL.lastPathComponent, relativeTo: fileURL.deletingLastPathComponent())
 } catch {}
