@@ -10,7 +10,7 @@
   <img alt="Cocoapods" src="https://img.shields.io/badge/cocoapods-compatible-brightgreen.svg">
 </p>
 
-`Zipper` is a library to create, read and modify ZIP archive files, written in Swift and based on [Apple's libcompression](https://developer.apple.com/documentation/compression/data_compression) for high performance and energy efficiency.
+`Zipper` is a library to create, read and modify ZIP archive files, written in Swift.
 
 ## Requirements
 
@@ -47,7 +47,7 @@ Zipper is released under the MIT License.
 
 ```swift
 let fileManager = FileManager()
-let currentDirectoryURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+let currentDirectoryURL = URL(fileURLWithPath: fileManager.currentDirectoryPath)
 ```
 
 #### Zipping
