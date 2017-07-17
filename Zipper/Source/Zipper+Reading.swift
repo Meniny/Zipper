@@ -1,7 +1,7 @@
 
 import Foundation
 
-extension Zipper {
+public extension Zipper {
     /// Read a ZIP `Zipper.Entry` from the receiver and write it to `url`.
     ///
     /// - Parameters:
@@ -132,6 +132,15 @@ extension Zipper {
     ///   - destinationURL: The file URL that identifies the destination of the unzip operation.
     /// - Throws: Throws an error if the source item does not exist or the destination URL is not writable.
     public func unzip(to destinationURL: URL) throws {
+        try extract(to: destinationURL)
+    }
+    
+    /// Unzips the contents at the specified source URL to the destination URL.
+    ///
+    /// - Parameters:
+    ///   - destinationURL: The file URL that identifies the destination of the unzip operation.
+    /// - Throws: Throws an error if the source item does not exist or the destination URL is not writable.
+    public func unarchive(to destinationURL: URL) throws {
         try extract(to: destinationURL)
     }
 }

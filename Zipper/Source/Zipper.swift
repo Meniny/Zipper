@@ -158,6 +158,18 @@ public final class Zipper: Sequence {
         }
         setvbuf(self.archiveFile, nil, _IOFBF, Int(defaultPOSIXBufferSize))
     }
+    
+    public class func create(at u: URL) -> Zipper? {
+        return Zipper(url: u, accessMode: .create)
+    }
+    
+    public class func read(at u: URL) -> Zipper? {
+        return Zipper(url: u, accessMode: .read)
+    }
+    
+    public class func update(at u: URL) -> Zipper? {
+        return Zipper(url: u, accessMode: .update)
+    }
 
     deinit {
         fclose(self.archiveFile)

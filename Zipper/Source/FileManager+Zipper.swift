@@ -1,8 +1,8 @@
 
 import Foundation
 
-extension FileManager {
-    typealias CentralDirectoryStructure = Zipper.Entry.CentralDirectoryStructure
+public extension FileManager {
+    public typealias CentralDirectoryStructure = Zipper.Entry.CentralDirectoryStructure
 
     /// Zips the file or direcory contents at the specified source URL to the destination URL.
     ///
@@ -43,14 +43,14 @@ extension FileManager {
 
     // MARK: - Helpers
 
-    func createParentDirectoryStructure(for url: URL) throws {
+    public func createParentDirectoryStructure(for url: URL) throws {
         let parentDirectoryURL = url.deletingLastPathComponent()
         if !self.fileExists(atPath: parentDirectoryURL.path) {
             try self.createDirectory(at: parentDirectoryURL, withIntermediateDirectories: true, attributes: nil)
         }
     }
 
-    class func attributes(from centralDirectoryStructure: CentralDirectoryStructure) -> [FileAttributeKey : Any] {
+    public class func attributes(from centralDirectoryStructure: CentralDirectoryStructure) -> [FileAttributeKey : Any] {
         var attributes = [.posixPermissions: defaultPermissions,
                           .modificationDate: Date()] as [FileAttributeKey : Any]
         let versionMadeBy = centralDirectoryStructure.versionMadeBy
@@ -65,7 +65,7 @@ extension FileManager {
         return attributes
     }
 
-    class func permissions(for externalFileAttributes: UInt32, osType: Zipper.Entry.OSType) -> UInt16 {
+    public class func permissions(for externalFileAttributes: UInt32, osType: Zipper.Entry.OSType) -> UInt16 {
         switch osType {
         case .unix, .osx:
             let permissions = mode_t(externalFileAttributes >> 16) & (~S_IFMT)
@@ -75,7 +75,7 @@ extension FileManager {
         }
     }
 
-    class func externalFileAttributesForEntry(of type: Zipper.Entry.EntryType, permissions: UInt16) -> UInt32 {
+    public class func externalFileAttributesForEntry(of type: Zipper.Entry.EntryType, permissions: UInt16) -> UInt32 {
         var typeInt: UInt16
         switch type {
         case .file:
@@ -90,7 +90,7 @@ extension FileManager {
         return externalFileAttributes
     }
 
-    class func permissionsForItem(at URL: URL) throws -> UInt16 {
+    public class func permissionsForItem(at URL: URL) throws -> UInt16 {
         let fileManager = FileManager()
         let entryFileSystemRepresentation = fileManager.fileSystemRepresentation(withPath: URL.path)
         var fileStat = stat()

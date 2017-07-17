@@ -1,8 +1,8 @@
 
 import Foundation
 
-extension Date {
-    init(dateTime: (UInt16, UInt16)) {
+public extension Date {
+    public init(dateTime: (UInt16, UInt16)) {
         var msdosDateTime = Int(dateTime.0)
         msdosDateTime <<= 16
         msdosDateTime |= Int(dateTime.1)
@@ -19,11 +19,11 @@ extension Date {
         self = Date(timeIntervalSince1970: TimeInterval(time))
     }
     
-    var fileModificationDateTime: (UInt16, UInt16) {
+    public var fileModificationDateTime: (UInt16, UInt16) {
         return (self.fileModificationDate, self.fileModificationTime)
     }
     
-    var fileModificationDate: UInt16 {
+    public var fileModificationDate: UInt16 {
         var time = time_t(self.timeIntervalSince1970)
         guard let unixTime = gmtime(&time) else {
             return 0
@@ -37,7 +37,7 @@ extension Date {
         return (UInt16)(day + ((month) * 32) +  ((year - 1980) * 512))
     }
     
-    var fileModificationTime: UInt16 {
+    public var fileModificationTime: UInt16 {
         var time = time_t(self.timeIntervalSince1970)
         guard let unixTime = gmtime(&time) else {
             return 0

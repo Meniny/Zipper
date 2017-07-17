@@ -2,7 +2,7 @@
 import Foundation
 import CoreFoundation
 
-extension Zipper {
+public extension Zipper {
     
     /// A value that represents a file, a direcotry or a symbolic link within a ZIP `Zipper`.
     ///
@@ -30,14 +30,14 @@ extension Zipper {
             }
         }
         
-        enum OSType: UInt {
+        public enum OSType: UInt {
             case msdos = 0
             case unix = 3
             case osx = 19
             case unused = 20
         }
         
-        struct LocalFileHeader: ZipperDataSerializable {
+        public struct LocalFileHeader: ZipperDataSerializable {
             let localFileHeaderSignature = UInt32(localFileHeaderStructSignature)
             let versionNeededToExtract: UInt16
             let generalPurposeBitFlag: UInt16
@@ -49,21 +49,21 @@ extension Zipper {
             let uncompressedSize: UInt32
             let fileNameLength: UInt16
             let extraFieldLength: UInt16
-            static let size = 30
+            public static let size = 30
             let fileNameData: Data
             let extraFieldData: Data
         }
         
-        struct DataDescriptor: ZipperDataSerializable {
-            let data: Data
+        public struct DataDescriptor: ZipperDataSerializable {
+            public let data: Data
             let dataDescriptorSignature = UInt32(dataDescriptorStructSignature)
             let crc32: UInt32
             let compressedSize: UInt32
             let uncompressedSize: UInt32
-            static let size = 16
+            public static let size = 16
         }
         
-        struct CentralDirectoryStructure: ZipperDataSerializable {
+        public struct CentralDirectoryStructure: ZipperDataSerializable {
             let centralDirectorySignature = UInt32(centralDirectoryStructSignature)
             let versionMadeBy: UInt16
             let versionNeededToExtract: UInt16
@@ -81,7 +81,7 @@ extension Zipper {
             let internalFileAttributes: UInt16
             let externalFileAttributes: UInt32
             let relativeOffsetOfLocalHeader: UInt32
-            static let size = 46
+            public static let size = 46
             let fileNameData: Data
             let extraFieldData: Data
             let fileCommentData: Data
@@ -152,16 +152,16 @@ extension Zipper {
                 return isDirectory ? .directory : .file
             }
         }
-        var dataOffset: Int {
+        public var dataOffset: Int {
             var dataOffset = Int(self.centralDirectoryStructure.relativeOffsetOfLocalHeader)
             dataOffset += LocalFileHeader.size
             dataOffset += Int(self.localFileHeader.fileNameLength)
             dataOffset += Int(self.localFileHeader.extraFieldLength)
             return dataOffset
         }
-        let centralDirectoryStructure: CentralDirectoryStructure
-        let localFileHeader: LocalFileHeader
-        let dataDescriptor: DataDescriptor?
+        public let centralDirectoryStructure: CentralDirectoryStructure
+        public let localFileHeader: LocalFileHeader
+        public let dataDescriptor: DataDescriptor?
         
         public static func == (lhs: Zipper.Entry, rhs: Zipper.Entry) -> Bool {
             return lhs.path == rhs.path
@@ -171,7 +171,7 @@ extension Zipper {
                 == rhs.centralDirectoryStructure.relativeOffsetOfLocalHeader
         }
         
-        init?(centralDirectoryStructure: CentralDirectoryStructure,
+        public init?(centralDirectoryStructure: CentralDirectoryStructure,
               localFileHeader: LocalFileHeader,
               dataDescriptor: DataDescriptor?) {
             //We currently don't support ZIP64 or encrypted archives
@@ -185,8 +185,8 @@ extension Zipper {
 }
 
 
-extension Zipper.Entry.LocalFileHeader {
-    var data: Data {
+public extension Zipper.Entry.LocalFileHeader {
+    public var data: Data {
         var localFileHeaderSignature = self.localFileHeaderSignature
         var versionNeededToExtract = self.versionNeededToExtract
         var generalPurposeBitFlag = self.generalPurposeBitFlag
@@ -214,7 +214,7 @@ extension Zipper.Entry.LocalFileHeader {
         return data
     }
 
-    init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
+    public init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
         guard data.count == Zipper.Entry.LocalFileHeader.size else { return nil }
         guard data.scanValue(start: 0) == localFileHeaderSignature else { return nil }
         self.versionNeededToExtract = data.scanValue(start: 4)
@@ -241,8 +241,8 @@ extension Zipper.Entry.LocalFileHeader {
     }
 }
 
-extension Zipper.Entry.CentralDirectoryStructure {
-    var data: Data {
+public extension Zipper.Entry.CentralDirectoryStructure {
+    public var data: Data {
         var centralDirectorySignature = self.centralDirectorySignature
         var versionMadeBy = self.versionMadeBy
         var versionNeededToExtract = self.versionNeededToExtract
@@ -283,7 +283,7 @@ extension Zipper.Entry.CentralDirectoryStructure {
         return data
     }
 
-    init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
+    public init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
         guard data.count == Zipper.Entry.CentralDirectoryStructure.size else { return nil }
         guard data.scanValue(start: 0) == centralDirectorySignature else { return nil }
         self.versionMadeBy = data.scanValue(start: 4)
@@ -318,7 +318,7 @@ extension Zipper.Entry.CentralDirectoryStructure {
         self.fileCommentData = additionalData.subdata(in: subRangeStart..<subRangeEnd)
     }
 
-    init(localFileHeader: Zipper.Entry.LocalFileHeader, fileAttributes: UInt32, relativeOffset: UInt32) {
+    public init(localFileHeader: Zipper.Entry.LocalFileHeader, fileAttributes: UInt32, relativeOffset: UInt32) {
         versionMadeBy = UInt16(789)
         versionNeededToExtract = localFileHeader.versionNeededToExtract
         generalPurposeBitFlag = localFileHeader.generalPurposeBitFlag
@@ -340,7 +340,7 @@ extension Zipper.Entry.CentralDirectoryStructure {
         fileCommentData = Data()
     }
 
-    init(centralDirectoryStructure: Zipper.Entry.CentralDirectoryStructure, offset: UInt32) {
+    public init(centralDirectoryStructure: Zipper.Entry.CentralDirectoryStructure, offset: UInt32) {
         let relativeOffset = centralDirectoryStructure.relativeOffsetOfLocalHeader - offset
         relativeOffsetOfLocalHeader = relativeOffset
         versionMadeBy = centralDirectoryStructure.versionMadeBy
@@ -364,8 +364,8 @@ extension Zipper.Entry.CentralDirectoryStructure {
     }
 }
 
-extension Zipper.Entry.DataDescriptor {
-    init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
+public extension Zipper.Entry.DataDescriptor {
+    public init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
         guard data.count == Zipper.Entry.DataDescriptor.size else { return nil }
         let signature: UInt32 = data.scanValue(start: 0)
         // The DataDescriptor signature is not mandatory so we have to re-arrange

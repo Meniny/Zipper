@@ -1,7 +1,7 @@
 
 import Foundation
 
-extension Zipper {
+public extension Zipper {
     private enum ModifyOperation: Int {
         case remove = -1
         case add = 1

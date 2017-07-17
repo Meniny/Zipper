@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Zipper'
-  s.version = '1.0.1'
+  s.version = '1.0.2'
   s.license = 'MIT'
   s.summary = 'Effortless ZIP Handling in Swift'
   s.homepage = 'https://github.com/Meniny/Zipper'
