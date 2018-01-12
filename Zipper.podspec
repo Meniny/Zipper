@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name = 'Zipper'
-  s.version = '1.0.2'
+  s.version = '1.0.3'
   s.license = 'MIT'
   s.summary = 'Effortless ZIP Handling in Swift'
   s.homepage = 'https://github.com/Meniny/Zipper'
-  s.social_media_url = 'http://meniny.cn/'
+  s.social_media_url = 'https://meniny.cn/'
   s.authors = { 'Elias Abel' => 'Meniny@qq.com' }
   s.source = { :git => 'https://github.com/Meniny/Zipper.git', :tag => s.version }
 
