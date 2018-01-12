@@ -1,16 +1,16 @@
 {
   "name": "Zipper",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "license": "MIT",
   "summary": "Effortless ZIP Handling in Swift",
   "homepage": "https://github.com/Meniny/Zipper",
-  "social_media_url": "http://meniny.cn/",
+  "social_media_url": "https://meniny.cn/",
   "authors": {
     "Elias Abel": "Meniny@qq.com"
   },
   "source": {
     "git": "https://github.com/Meniny/Zipper.git",
-    "tag": "1.0.0"
+    "tag": "1.0.3"
   },
   "platforms": {
     "ios": "9.0",
