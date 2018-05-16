@@ -1,0 +1,190 @@
+:name: Zipper
+:author: Elias Abel
+:author_esc: Elias%20Abel
+:mail: admin@meniny.cn
+:desc: a Effortless ZIP Handling in Swift
+:icon: {name}.png
+:version: 1.1.0
+:na: N/A
+:ios: 9.0
+:macos: 10.11
+:watchos: 2.0
+:tvos: 9.0
+:linux: with `zlib`
+:xcode: 9.3
+:swift: 4.1
+:license: MIT
+:sep: %20%7C%20
+:platform: iOS{sep}macOS{sep}watchOS{sep}tvOS{sep}Linux
+= Meet `{name}`
+{author} <{mail}>
+v{version}, 2018-05-16
+
+[subs="attributes"]
+++++
+<p align="center">
+  <img src="./Assets/{icon}" alt="{name}" width="200px">
+  <br/><br/>
+  <img alt="Author" src="https://img.shields.io/badge/author-{author_esc}-blue.svg">
+  <img alt="EMail" src="https://img.shields.io/badge/mail-{mail}-orange.svg">
+  <img alt="MIT" src="https://img.shields.io/badge/license-{license}-blue.svg">
+  <br/>
+  <img alt="Version" src="https://img.shields.io/badge/version-{version}-brightgreen.svg">
+  <img alt="Platforms" src="https://img.shields.io/badge/platform-{platform}-lightgrey.svg">
+  <img alt="Swift" src="https://img.shields.io/badge/swift-{swift}%2B-orange.svg">
+  <br/>
+  <img alt="Build Passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+  <img alt="Cocoapods" src="https://img.shields.io/badge/cocoapods-compatible-brightgreen.svg">
+  <img alt="Carthage" src="https://img.shields.io/badge/carthage-compatible-brightgreen.svg">
+  <img alt="SPM" src="https://img.shields.io/badge/spm-compatible-brightgreen.svg">
+</p>
+++++
+
+:toc:
+
+== 🏵 Introduction
+
+**{name}** is {desc}.
+
+== 📋 Requirements
+
+[%header]
+|===
+2+^m|Type 1+^m|Requirement
+
+1.5+^.^|Platform ^|iOS ^|{ios}+
+^|macOS ^|{macos}
+^|tvOS ^|{tvos}
+^|watchOS ^|{watchos}
+^|Linux ^|{linux}
+
+^|IDE ^|Xcode ^| {xcode}+
+^|Language ^|Swift ^| {swift}+
+|===
+
+== 📲 Installation
+
+=== CocoaPods
+
+`{name}` is available on link:https://cocoapods.org[CocoaPods].
+
+[source, ruby, subs="verbatim,attributes"]
+----
+use_frameworks!
+pod '{name}'
+----
+
+=== Manually
+
+Copy all files in the `{name}` directory into your project.
+
+== 🛌 Dependency
+
+{na}
+
+== ❤️ Contribution
+
+You are welcome to fork and submit pull requests.
+
+== 🔖 License
+
+`{name}` is open-sourced software, licensed under the link:./LICENSE.md[`{license}`] license.
+
+== 🔫 Usage
+
+[source, swift, subs="verbatim,attributes"]
+----
+import {name}
+
+let fileManager = FileManager()
+let currentDirectoryURL = URL(fileURLWithPath: fileManager.currentDirectoryPath)
+----
+
+=== Zipping
+
+[source, swift, subs="verbatim,attributes"]
+----
+var archiveURL = currentDirectoryURL.appendPathComponent("archive.zip")
+var resourcesURL = currentDirectoryURL.appendPathComponent("directory")
+// zip:
+do {
+  try fileManager.zip(item: resourcesURL, to: archive)
+} catch _ {}
+// or:
+guard let archive = Zipper(url: archiveURL, accessMode: .create) else  { return }
+do {
+  try archive.zip(item: resourcesURL)
+} catch {
+
+}
+----
+
+=== Unzipping
+
+[source, swift, subs="verbatim,attributes"]
+----
+var archiveURL = currentDirectoryURL.appendPathComponent("archive.zip")
+var destinationURL = currentDirectoryURL.appendPathComponent("directory")
+// unzip:
+do {
+  try fileManager.createDirectory(at: destinationURL, withIntermediateDirectories: true, attributes: nil)
+  try fileManager.unzip(item: archiveURL, to: destinationURL)
+} catch {
+
+}
+// or:
+guard let archive = Zipper(url: archiveURL, accessMode: .read) else  { return }
+do {
+  try archive.unzip(to: destinationURL)
+} catch {
+
+}
+----
+
+=== Accessing individual Entries
+
+[source, swift, subs="verbatim,attributes"]
+----
+var archiveURL = currentDirectoryURL.appendPathComponent("archive.zip")
+guard let archive = Zipper(url: archiveURL, accessMode: .read) else  { return }
+guard let entry = archive["file.txt"] else { return }
+var destinationURL = currentDirectoryURL.appendPathComponent("output.txt")
+
+do {
+    try archive.extract(entry, to: destinationURL)
+} catch {
+
+}
+----
+
+=== Adding/Removing Entries
+
+[source, swift, subs="verbatim,attributes"]
+----
+var archiveURL = currentDirectoryURL.appendPathComponent("archive.zip")
+var fileURL = currentDirectoryURL.appendPathComponent("file.ext")
+----
+
+==== Adding:
+
+[source, swift, subs="verbatim,attributes"]
+----
+guard let archive = Zipper(url: archiveURL, accessMode: .update) else { return }
+do {
+    try archive.addEntry(with: fileURL.lastPathComponent, relativeTo: fileURL.deletingLastPathComponent())
+} catch {
+
+}
+----
+
+==== Removing:
+
+[source, swift, subs="verbatim,attributes"]
+----
+guard let entry = archive["file.txt"] else { return }
+do {
+    try archive.remove(entry)
+} catch {
+
+}
+----

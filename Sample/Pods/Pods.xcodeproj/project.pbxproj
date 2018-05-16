@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E9FB91E04C38A23F0A7E4F81EDB9F50 /* Zipper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E425FB13DC6374BAC5A9365C909F1C5 /* Zipper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		210E30393ACBA6FE5D2B45C83893FB8F /* Date+Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36A2B0FA3B74B9A7E9550C5ADC9F7E /* Date+Zipper.swift */; };
-		255C39D77C7287F832729E4DC21D1CED /* Zipper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6761CE5374437A979A3F3D72BB69E69 /* Zipper-dummy.m */; };
-		4C81DB44F235D5CDD1B8C23C91493739 /* Pods-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A19FCBCA24DD9EA2274DA6FA95B924 /* Pods-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67BAF06D309ADB9D027DBEF856711971 /* FileManager+Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DCE1006FA07F107CD048BC860CC05A /* FileManager+Zipper.swift */; };
-		75C6DA6E77B4DE88D37772D93BD6A2EE /* Zipper+Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F8477567508A1AB22FACAF0AEB4A5 /* Zipper+Entry.swift */; };
-		8C0A7D9637EF4FADB7FFB66D7F693157 /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A5203EEDC196877CC57D3F1CB35A83 /* Data+Serialization.swift */; };
-		9BE7103663121C105BA85CE32795BB10 /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF7560E7C7005D71EA0626B8C9254 /* Zipper.swift */; };
-		9E844315200F90B10AC5D64D64AC4B5F /* Zipper+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C6F7A68C149EA946F9B1F3A57C2F0 /* Zipper+Reading.swift */; };
-		B12E64D0059FE5378A61A8AFB715BE78 /* Zipper+Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501BCB89A5E69F6EC45688B51DF37EA /* Zipper+Writing.swift */; };
-		B5774577D4DB5D0700F5346EAF7EB55D /* Zipper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE09650A14C3C74AD3FC5547F191CB1 /* Zipper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C53345395FB0E5B14830BAEB4847DA4F /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44692A2E2CCBCDB466A6CEF5C2CFDD /* Data+Compression.swift */; };
+		0E9FB91E04C38A23F0A7E4F81EDB9F50 /* Zipper.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DF619001BFEC91CEC880DCE20A4C0F /* Zipper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		210E30393ACBA6FE5D2B45C83893FB8F /* Date+Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC77B288C9A0B6E04E8E29EF0BCACC3 /* Date+Zipper.swift */; };
+		255C39D77C7287F832729E4DC21D1CED /* Zipper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 945B716F451A3AE1CC0C5AF047E9A4AF /* Zipper-dummy.m */; };
+		4C81DB44F235D5CDD1B8C23C91493739 /* Pods-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E1D06391C1A89C2C1C59A450C24FD6 /* Pods-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67BAF06D309ADB9D027DBEF856711971 /* FileManager+Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCD67291F05CD5CA837FB6B23741C63 /* FileManager+Zipper.swift */; };
+		75C6DA6E77B4DE88D37772D93BD6A2EE /* Zipper+Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFADDFB3507830CCC5E80358DEF72CF /* Zipper+Entry.swift */; };
+		8C0A7D9637EF4FADB7FFB66D7F693157 /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7886C6B980766C80E8BA82DE93C9ECEB /* Data+Serialization.swift */; };
+		9BE7103663121C105BA85CE32795BB10 /* Zipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD19A50A13E48D6285D0CF94C3B16C8F /* Zipper.swift */; };
+		9E844315200F90B10AC5D64D64AC4B5F /* Zipper+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C611EA3F45FC2CB3E57D4C036BA746 /* Zipper+Reading.swift */; };
+		B12E64D0059FE5378A61A8AFB715BE78 /* Zipper+Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1061BDBD3CBADAEDFB61784A59B47E3 /* Zipper+Writing.swift */; };
+		B5774577D4DB5D0700F5346EAF7EB55D /* Zipper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B2B212859EC410F2E9F1EC0063F3F0A /* Zipper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53345395FB0E5B14830BAEB4847DA4F /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341FC888833EC2E0992A3AC5F2BB853B /* Data+Compression.swift */; };
 		DBEA96551016E62F2D4D13E46DC3ADDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E6426B0947B2DE830C4C73FAAEE01F71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		F817C9F2893E9A2CB97B28920ABE022A /* Pods-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFFB79315F50DFDF6CCADEDDD8C8C9C /* Pods-iOS-dummy.m */; };
+		F817C9F2893E9A2CB97B28920ABE022A /* Pods-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF870ACCD7AD406BC64696675C50438 /* Pods-iOS-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,35 +35,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008C8504506AD59E1F6DC3F3C1FD7110 /* Zipper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zipper-prefix.pch"; sourceTree = "<group>"; };
-		015CEC8D0B56E0B04A60FE802A809273 /* Zipper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Zipper.modulemap; sourceTree = "<group>"; };
-		0CE09650A14C3C74AD3FC5547F191CB1 /* Zipper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zipper-umbrella.h"; sourceTree = "<group>"; };
-		0F3C5DD11BFC156AEB129A8427F1BCFF /* Pods-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS-frameworks.sh"; sourceTree = "<group>"; };
-		1E9F8477567508A1AB22FACAF0AEB4A5 /* Zipper+Entry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Zipper+Entry.swift"; path = "Zipper/Source/Zipper+Entry.swift"; sourceTree = "<group>"; };
-		223697100FCFA612F033B39281D7B388 /* Zipper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zipper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31A5203EEDC196877CC57D3F1CB35A83 /* Data+Serialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Serialization.swift"; path = "Zipper/Source/Data+Serialization.swift"; sourceTree = "<group>"; };
-		36F95EB5D1C6782BC1C8802B87020629 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C817F1E75E03DF2CDD4F99921589859 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52F765FFDEF6EC07B0087AF3B953E26B /* Zipper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zipper.xcconfig; sourceTree = "<group>"; };
-		59DCE1006FA07F107CD048BC860CC05A /* FileManager+Zipper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+Zipper.swift"; path = "Zipper/Source/FileManager+Zipper.swift"; sourceTree = "<group>"; };
-		5E425FB13DC6374BAC5A9365C909F1C5 /* Zipper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zipper.h; path = Zipper/Source/Zipper.h; sourceTree = "<group>"; };
-		636B9D1587D858025F9C6B4579AE09B4 /* Pods_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6501BCB89A5E69F6EC45688B51DF37EA /* Zipper+Writing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Zipper+Writing.swift"; path = "Zipper/Source/Zipper+Writing.swift"; sourceTree = "<group>"; };
+		04FEAD37330980372315A4CEFA250BFA /* Pods-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		12B53B15E0E68A2E766F01AE88BC5B6D /* Zipper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zipper-prefix.pch"; sourceTree = "<group>"; };
+		18C611EA3F45FC2CB3E57D4C036BA746 /* Zipper+Reading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Zipper+Reading.swift"; path = "Zipper/Source/Zipper+Reading.swift"; sourceTree = "<group>"; };
+		19FA806E04021D16BF21BB3B31A8AE59 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		223697100FCFA612F033B39281D7B388 /* Zipper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zipper.framework; path = Zipper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		259B8C34B88391FA5A60CEA735F244A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B5902EA8B6C386FACED79608D58DDE /* Pods-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		341FC888833EC2E0992A3AC5F2BB853B /* Data+Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Compression.swift"; path = "Zipper/Source/Data+Compression.swift"; sourceTree = "<group>"; };
+		3EFDCDE9498FD444704B8B11EFEC5BAA /* Pods-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS-frameworks.sh"; sourceTree = "<group>"; };
+		594FC70AA21FAB9D9E8F6B68606D380D /* Zipper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zipper.xcconfig; sourceTree = "<group>"; };
+		636B9D1587D858025F9C6B4579AE09B4 /* Pods_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOS.framework; path = "Pods-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6F653571C9BBF67D069D4F9B02EF884D /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		75234299E60DEC5DC40442EDB71DEF2B /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		823A293FCAFDBC39B80646A61EB6859A /* Pods-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOS.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FFDD63DF93A089A8CE3493F357A7B7B /* Pods-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A6761CE5374437A979A3F3D72BB69E69 /* Zipper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zipper-dummy.m"; sourceTree = "<group>"; };
-		BF44692A2E2CCBCDB466A6CEF5C2CFDD /* Data+Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Compression.swift"; path = "Zipper/Source/Data+Compression.swift"; sourceTree = "<group>"; };
-		C1FA4482A50A557D6320FECE49A27168 /* Pods-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS-resources.sh"; sourceTree = "<group>"; };
-		CDFFB79315F50DFDF6CCADEDDD8C8C9C /* Pods-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOS-dummy.m"; sourceTree = "<group>"; };
-		D1A4C24E05EFE417E2CCB1933575196D /* Pods-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		E29C6F7A68C149EA946F9B1F3A57C2F0 /* Zipper+Reading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Zipper+Reading.swift"; path = "Zipper/Source/Zipper+Reading.swift"; sourceTree = "<group>"; };
-		EE36A2B0FA3B74B9A7E9550C5ADC9F7E /* Date+Zipper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Zipper.swift"; path = "Zipper/Source/Date+Zipper.swift"; sourceTree = "<group>"; };
-		EEDAF7560E7C7005D71EA0626B8C9254 /* Zipper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zipper.swift; path = Zipper/Source/Zipper.swift; sourceTree = "<group>"; };
-		F7A19FCBCA24DD9EA2274DA6FA95B924 /* Pods-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOS-umbrella.h"; sourceTree = "<group>"; };
+		6FB255645FCC119B3FEB9A001ADB5601 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7886C6B980766C80E8BA82DE93C9ECEB /* Data+Serialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Serialization.swift"; path = "Zipper/Source/Data+Serialization.swift"; sourceTree = "<group>"; };
+		7B2B212859EC410F2E9F1EC0063F3F0A /* Zipper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zipper-umbrella.h"; sourceTree = "<group>"; };
+		7F5E97C8063831FD596D607ED3BD7396 /* Zipper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zipper.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		945B716F451A3AE1CC0C5AF047E9A4AF /* Zipper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zipper-dummy.m"; sourceTree = "<group>"; };
+		99DF619001BFEC91CEC880DCE20A4C0F /* Zipper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zipper.h; path = Zipper/Source/Zipper.h; sourceTree = "<group>"; };
+		9CCD67291F05CD5CA837FB6B23741C63 /* FileManager+Zipper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+Zipper.swift"; path = "Zipper/Source/FileManager+Zipper.swift"; sourceTree = "<group>"; };
+		9DC77B288C9A0B6E04E8E29EF0BCACC3 /* Date+Zipper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Zipper.swift"; path = "Zipper/Source/Date+Zipper.swift"; sourceTree = "<group>"; };
+		A03BEFEF95E508C87B9E8338F0329E48 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
+		A78100C8F9207A940B390690CDADCC1C /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		ACF870ACCD7AD406BC64696675C50438 /* Pods-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOS-dummy.m"; sourceTree = "<group>"; };
+		AD19A50A13E48D6285D0CF94C3B16C8F /* Zipper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zipper.swift; path = Zipper/Source/Zipper.swift; sourceTree = "<group>"; };
+		B1061BDBD3CBADAEDFB61784A59B47E3 /* Zipper+Writing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Zipper+Writing.swift"; path = "Zipper/Source/Zipper+Writing.swift"; sourceTree = "<group>"; };
+		B2EA51C395D54CCF7CF04BB08E1CDD40 /* README.adoc */ = {isa = PBXFileReference; includeInIndex = 1; path = README.adoc; sourceTree = "<group>"; };
+		BBFADDFB3507830CCC5E80358DEF72CF /* Zipper+Entry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Zipper+Entry.swift"; path = "Zipper/Source/Zipper+Entry.swift"; sourceTree = "<group>"; };
+		BE12DE1F2C482C5B3CCC6F7205D77425 /* Zipper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Zipper.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEFD9DF0B7F7C585FC091B95402738FE /* Pods-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOS.modulemap"; sourceTree = "<group>"; };
+		D1E1D06391C1A89C2C1C59A450C24FD6 /* Pods-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOS-umbrella.h"; sourceTree = "<group>"; };
+		FE551203D0BB6E48049C8D096CA7CCA1 /* Pods-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,27 +98,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D2D9FF24E456BC2D04CDBABFF4CCCAC /* Development Pods */ = {
+		29722362C2A691D433FA32ED32A3DDE2 /* Zipper */ = {
 			isa = PBXGroup;
 			children = (
-				DA78FEAC8296E9CA68D06DC4E4C03E19 /* Zipper */,
+				341FC888833EC2E0992A3AC5F2BB853B /* Data+Compression.swift */,
+				7886C6B980766C80E8BA82DE93C9ECEB /* Data+Serialization.swift */,
+				9DC77B288C9A0B6E04E8E29EF0BCACC3 /* Date+Zipper.swift */,
+				9CCD67291F05CD5CA837FB6B23741C63 /* FileManager+Zipper.swift */,
+				99DF619001BFEC91CEC880DCE20A4C0F /* Zipper.h */,
+				AD19A50A13E48D6285D0CF94C3B16C8F /* Zipper.swift */,
+				BBFADDFB3507830CCC5E80358DEF72CF /* Zipper+Entry.swift */,
+				18C611EA3F45FC2CB3E57D4C036BA746 /* Zipper+Reading.swift */,
+				B1061BDBD3CBADAEDFB61784A59B47E3 /* Zipper+Writing.swift */,
+				F5431522B17DAC25900C8394B2FACA19 /* Pod */,
+				B8EBDB31878D8188647F2393EEC9EFC3 /* Support Files */,
 			);
-			name = "Development Pods";
+			name = Zipper;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		4F73946104FDB1436D749F187DE52D75 /* Pods-iOS */ = {
+		30155FF78B27F7D2B868984445A549CA /* Pods-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				36F95EB5D1C6782BC1C8802B87020629 /* Info.plist */,
-				823A293FCAFDBC39B80646A61EB6859A /* Pods-iOS.modulemap */,
-				9FFDD63DF93A089A8CE3493F357A7B7B /* Pods-iOS-acknowledgements.markdown */,
-				D1A4C24E05EFE417E2CCB1933575196D /* Pods-iOS-acknowledgements.plist */,
-				CDFFB79315F50DFDF6CCADEDDD8C8C9C /* Pods-iOS-dummy.m */,
-				0F3C5DD11BFC156AEB129A8427F1BCFF /* Pods-iOS-frameworks.sh */,
-				C1FA4482A50A557D6320FECE49A27168 /* Pods-iOS-resources.sh */,
-				F7A19FCBCA24DD9EA2274DA6FA95B924 /* Pods-iOS-umbrella.h */,
-				6F653571C9BBF67D069D4F9B02EF884D /* Pods-iOS.debug.xcconfig */,
-				75234299E60DEC5DC40442EDB71DEF2B /* Pods-iOS.release.xcconfig */,
+				6FB255645FCC119B3FEB9A001ADB5601 /* Info.plist */,
+				BEFD9DF0B7F7C585FC091B95402738FE /* Pods-iOS.modulemap */,
+				27B5902EA8B6C386FACED79608D58DDE /* Pods-iOS-acknowledgements.markdown */,
+				04FEAD37330980372315A4CEFA250BFA /* Pods-iOS-acknowledgements.plist */,
+				ACF870ACCD7AD406BC64696675C50438 /* Pods-iOS-dummy.m */,
+				3EFDCDE9498FD444704B8B11EFEC5BAA /* Pods-iOS-frameworks.sh */,
+				FE551203D0BB6E48049C8D096CA7CCA1 /* Pods-iOS-resources.sh */,
+				D1E1D06391C1A89C2C1C59A450C24FD6 /* Pods-iOS-umbrella.h */,
+				19FA806E04021D16BF21BB3B31A8AE59 /* Pods-iOS.debug.xcconfig */,
+				A78100C8F9207A940B390690CDADCC1C /* Pods-iOS.release.xcconfig */,
 			);
 			name = "Pods-iOS";
 			path = "Target Support Files/Pods-iOS";
@@ -125,30 +139,38 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				2D2D9FF24E456BC2D04CDBABFF4CCCAC /* Development Pods */,
+				922AF7971618361740F2CC7E9AA5B38D /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				0B4DFEE279E787460B11BB29174B74D0 /* Products */,
 				A499F2438739C6A8E57ACFCEF0D75DFF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
+		922AF7971618361740F2CC7E9AA5B38D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29722362C2A691D433FA32ED32A3DDE2 /* Zipper */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		A499F2438739C6A8E57ACFCEF0D75DFF /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4F73946104FDB1436D749F187DE52D75 /* Pods-iOS */,
+				30155FF78B27F7D2B868984445A549CA /* Pods-iOS */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AE2985DFCD447EF9FF2137826C225670 /* Support Files */ = {
+		B8EBDB31878D8188647F2393EEC9EFC3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C817F1E75E03DF2CDD4F99921589859 /* Info.plist */,
-				015CEC8D0B56E0B04A60FE802A809273 /* Zipper.modulemap */,
-				52F765FFDEF6EC07B0087AF3B953E26B /* Zipper.xcconfig */,
-				A6761CE5374437A979A3F3D72BB69E69 /* Zipper-dummy.m */,
-				008C8504506AD59E1F6DC3F3C1FD7110 /* Zipper-prefix.pch */,
-				0CE09650A14C3C74AD3FC5547F191CB1 /* Zipper-umbrella.h */,
+				259B8C34B88391FA5A60CEA735F244A2 /* Info.plist */,
+				7F5E97C8063831FD596D607ED3BD7396 /* Zipper.modulemap */,
+				594FC70AA21FAB9D9E8F6B68606D380D /* Zipper.xcconfig */,
+				945B716F451A3AE1CC0C5AF047E9A4AF /* Zipper-dummy.m */,
+				12B53B15E0E68A2E766F01AE88BC5B6D /* Zipper-prefix.pch */,
+				7B2B212859EC410F2E9F1EC0063F3F0A /* Zipper-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Sample/Pods/Target Support Files/Zipper";
@@ -170,22 +192,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DA78FEAC8296E9CA68D06DC4E4C03E19 /* Zipper */ = {
+		F5431522B17DAC25900C8394B2FACA19 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				BF44692A2E2CCBCDB466A6CEF5C2CFDD /* Data+Compression.swift */,
-				31A5203EEDC196877CC57D3F1CB35A83 /* Data+Serialization.swift */,
-				EE36A2B0FA3B74B9A7E9550C5ADC9F7E /* Date+Zipper.swift */,
-				59DCE1006FA07F107CD048BC860CC05A /* FileManager+Zipper.swift */,
-				5E425FB13DC6374BAC5A9365C909F1C5 /* Zipper.h */,
-				EEDAF7560E7C7005D71EA0626B8C9254 /* Zipper.swift */,
-				1E9F8477567508A1AB22FACAF0AEB4A5 /* Zipper+Entry.swift */,
-				E29C6F7A68C149EA946F9B1F3A57C2F0 /* Zipper+Reading.swift */,
-				6501BCB89A5E69F6EC45688B51DF37EA /* Zipper+Writing.swift */,
-				AE2985DFCD447EF9FF2137826C225670 /* Support Files */,
+				A03BEFEF95E508C87B9E8338F0329E48 /* LICENSE.md */,
+				B2EA51C395D54CCF7CF04BB08E1CDD40 /* README.adoc */,
+				BE12DE1F2C482C5B3CCC6F7205D77425 /* Zipper.podspec */,
 			);
-			name = Zipper;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,13 +266,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					B22A1E9B68D1F790F1FA1DD9A55CF776 = {
-						LastSwiftMigration = 0920;
-					};
-				};
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -315,9 +324,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C943BFCD2F5D2D0642B01438A9311C9 /* Debug */ = {
+		105CE9F46CA00CE5B9BDB4418E83EA2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F653571C9BBF67D069D4F9B02EF884D /* Pods-iOS.debug.xcconfig */;
+			baseConfigurationReference = 594FC70AA21FAB9D9E8F6B68606D380D /* Zipper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -328,28 +337,26 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iOS/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Zipper/Zipper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zipper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iOS/Pods-iOS.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iOS;
+				MODULEMAP_FILE = "Target Support Files/Zipper/Zipper.modulemap";
+				PRODUCT_MODULE_NAME = Zipper;
+				PRODUCT_NAME = Zipper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -359,10 +366,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -370,6 +379,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -378,95 +388,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A7ED9C833E62F5700426D8A1139DC902 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75234299E60DEC5DC40442EDB71DEF2B /* Pods-iOS.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iOS/Pods-iOS.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -491,16 +413,15 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		CEA424148827A3457CC33A83F5AE2FFB /* Release */ = {
+		A01FD8B75D35815202F43B8D241A2586 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52F765FFDEF6EC07B0087AF3B953E26B /* Zipper.xcconfig */;
+			baseConfigurationReference = 594FC70AA21FAB9D9E8F6B68606D380D /* Zipper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -517,13 +438,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Zipper/Zipper.modulemap";
+				PRODUCT_MODULE_NAME = Zipper;
 				PRODUCT_NAME = Zipper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -531,10 +452,11 @@
 			};
 			name = Release;
 		};
-		DB0E9423ED4523BB689728160875A718 /* Debug */ = {
+		CF3252A444919E9F8316DA001ECAD7AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52F765FFDEF6EC07B0087AF3B953E26B /* Zipper.xcconfig */;
+			baseConfigurationReference = A78100C8F9207A940B390690CDADCC1C /* Pods-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -544,24 +466,119 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Zipper/Zipper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Zipper/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Zipper/Zipper.modulemap";
-				PRODUCT_NAME = Zipper;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOS/Pods-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E86F0566D884B234D93CE695D6DC90CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19FA806E04021D16BF21BB3B31A8AE59 /* Pods-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOS/Pods-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -569,8 +586,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
-				6F9224530522DD3C735EC96CF142642E /* Release */,
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -578,8 +595,8 @@
 		AC91DCE42EB8E40A33D3FFBB48C3C88D /* Build configuration list for PBXNativeTarget "Zipper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB0E9423ED4523BB689728160875A718 /* Debug */,
-				CEA424148827A3457CC33A83F5AE2FFB /* Release */,
+				105CE9F46CA00CE5B9BDB4418E83EA2B /* Debug */,
+				A01FD8B75D35815202F43B8D241A2586 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -587,8 +604,8 @@
 		CB4FE6D2F98043A6E4689902531394AF /* Build configuration list for PBXNativeTarget "Pods-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C943BFCD2F5D2D0642B01438A9311C9 /* Debug */,
-				A7ED9C833E62F5700426D8A1139DC902 /* Release */,
+				E86F0566D884B234D93CE695D6DC90CE /* Debug */,
+				CF3252A444919E9F8316DA001ECAD7AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

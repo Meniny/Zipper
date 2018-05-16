@@ -1,16 +1,16 @@
 PODS:
-  - Zipper (1.0.3)
+  - Zipper (1.1.0)
 
 DEPENDENCIES:
   - Zipper (from `../`)
 
 EXTERNAL SOURCES:
   Zipper:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Zipper: 8082933bd95b28c80884b0ef533fe20db4c66f60
+  Zipper: 05da7d9adafa47a0e48e3c0fdf3c8c6051a4f88d
 
 PODFILE CHECKSUM: f1247b516a5eb44d7246e75933f71347d106fd7a
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.2
