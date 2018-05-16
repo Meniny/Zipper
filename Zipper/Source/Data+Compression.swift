@@ -91,7 +91,7 @@ extension Data {
         self.withUnsafeBytes { (bytes: UnsafePointer<UInt8>) in
             let byteArray = UnsafeBufferPointer(start: bytes, count: bufferSize)
             let bins = stride(from: 0, to: bufferSize, by: 256)
-            let chunks = bins.map { (position) -> RandomAccessSlice<UnsafeBufferPointer<UInt8>> in
+            let chunks = bins.map { (position) -> Slice<UnsafeBufferPointer<UInt8>> in
                 let end = (position + 256)
                 let range = position..<Swift.min(end, byteArray.count)
                 return byteArray[range]

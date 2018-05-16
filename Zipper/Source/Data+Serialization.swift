@@ -29,7 +29,7 @@ public extension Data {
     }
 
     public static func readChunk(from file: UnsafeMutablePointer<FILE>, size: Int) throws -> Data {
-        let bytes = UnsafeMutableRawPointer.allocate(bytes: size, alignedTo: 1)
+        let bytes = UnsafeMutableRawPointer.allocate(byteCount: size, alignment: 1)
         let bytesRead = fread(bytes, 1, size, file)
         let error = ferror(file)
         if error > 0 {
