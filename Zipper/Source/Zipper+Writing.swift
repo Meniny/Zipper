@@ -16,7 +16,7 @@ public extension Zipper {
     ///   - compressionMethod: Indicates the `CompressionMethod` that should be applied to `Zipper.Entry`.
     ///   - bufferSize: The maximum size of the write buffer and the compression buffer (if needed).
     /// - Throws: An error if the source file cannot be read or the receiver is not writable.
-    public func addEntry(with path: String, relativeTo baseURL: URL, compressionMethod: CompressionMethod = .none,
+    func addEntry(with path: String, relativeTo baseURL: URL, compressionMethod: CompressionMethod = .none,
                          bufferSize: UInt32 = defaultWriteChunkSize) throws {
         let fileManager = FileManager()
         let entryURL = baseURL.appendingPathComponent(path)
@@ -75,7 +75,7 @@ public extension Zipper {
     ///   - bufferSize: The maximum size of the write buffer and the compression buffer (if needed).
     ///   - provider: A closure that accepts a position and a chunk size. Returns a `Data` chunk.
     /// - Throws: An error if the source data is invalid or the receiver is not writable.
-    public func addEntry(with path: String, type: Zipper.Entry.EntryType, uncompressedSize: UInt32,
+    func addEntry(with path: String, type: Zipper.Entry.EntryType, uncompressedSize: UInt32,
                          modificationDate: Date = Date(),
                          permissions: UInt16 = defaultPermissions,
                          compressionMethod: CompressionMethod = .none, bufferSize: UInt32 = defaultWriteChunkSize,
@@ -127,7 +127,7 @@ public extension Zipper {
     ///   - entry: The `Zipper.Entry` to remove.
     ///   - bufferSize: The maximum size for the read and write buffers used during removal.
     /// - Throws: An error if the `Zipper.Entry` is malformed or the receiver is not writable.
-    public func remove(_ entry: Zipper.Entry, bufferSize: UInt32 = defaultReadChunkSize) throws {
+    func remove(_ entry: Zipper.Entry, bufferSize: UInt32 = defaultReadChunkSize) throws {
         let uniqueString = ProcessInfo.processInfo.globallyUniqueString
         let tempArchiveURL =  URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(uniqueString)
         guard let tempArchive = Zipper(url: tempArchiveURL, accessMode: .create) else {

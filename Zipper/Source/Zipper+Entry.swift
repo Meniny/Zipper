@@ -8,7 +8,7 @@ public extension Zipper {
     ///
     /// You can retrieve instances of `Zipper.Entry` from an `Zipper` via subscripting or iteration.
     /// Entries are identified by their `path`.
-    public struct Entry: Equatable {
+    struct Entry: Equatable {
         /// The type of an `Zipper.Entry` in a ZIP `Zipper`.
         public enum EntryType: Int {
             /// Indicates a regular file.
@@ -186,7 +186,7 @@ public extension Zipper {
 
 
 public extension Zipper.Entry.LocalFileHeader {
-    public var data: Data {
+    var data: Data {
         var localFileHeaderSignature = self.localFileHeaderSignature
         var versionNeededToExtract = self.versionNeededToExtract
         var generalPurposeBitFlag = self.generalPurposeBitFlag
@@ -214,7 +214,7 @@ public extension Zipper.Entry.LocalFileHeader {
         return data
     }
 
-    public init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
+    init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
         guard data.count == Zipper.Entry.LocalFileHeader.size else { return nil }
         guard data.scanValue(start: 0) == localFileHeaderSignature else { return nil }
         self.versionNeededToExtract = data.scanValue(start: 4)
@@ -242,7 +242,7 @@ public extension Zipper.Entry.LocalFileHeader {
 }
 
 public extension Zipper.Entry.CentralDirectoryStructure {
-    public var data: Data {
+    var data: Data {
         var centralDirectorySignature = self.centralDirectorySignature
         var versionMadeBy = self.versionMadeBy
         var versionNeededToExtract = self.versionNeededToExtract
@@ -283,7 +283,7 @@ public extension Zipper.Entry.CentralDirectoryStructure {
         return data
     }
 
-    public init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
+    init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
         guard data.count == Zipper.Entry.CentralDirectoryStructure.size else { return nil }
         guard data.scanValue(start: 0) == centralDirectorySignature else { return nil }
         self.versionMadeBy = data.scanValue(start: 4)
@@ -318,7 +318,7 @@ public extension Zipper.Entry.CentralDirectoryStructure {
         self.fileCommentData = additionalData.subdata(in: subRangeStart..<subRangeEnd)
     }
 
-    public init(localFileHeader: Zipper.Entry.LocalFileHeader, fileAttributes: UInt32, relativeOffset: UInt32) {
+    init(localFileHeader: Zipper.Entry.LocalFileHeader, fileAttributes: UInt32, relativeOffset: UInt32) {
         versionMadeBy = UInt16(789)
         versionNeededToExtract = localFileHeader.versionNeededToExtract
         generalPurposeBitFlag = localFileHeader.generalPurposeBitFlag
@@ -340,7 +340,7 @@ public extension Zipper.Entry.CentralDirectoryStructure {
         fileCommentData = Data()
     }
 
-    public init(centralDirectoryStructure: Zipper.Entry.CentralDirectoryStructure, offset: UInt32) {
+    init(centralDirectoryStructure: Zipper.Entry.CentralDirectoryStructure, offset: UInt32) {
         let relativeOffset = centralDirectoryStructure.relativeOffsetOfLocalHeader - offset
         relativeOffsetOfLocalHeader = relativeOffset
         versionMadeBy = centralDirectoryStructure.versionMadeBy
@@ -365,7 +365,7 @@ public extension Zipper.Entry.CentralDirectoryStructure {
 }
 
 public extension Zipper.Entry.DataDescriptor {
-    public init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
+    init?(data: Data, additionalDataProvider provider: (Int) throws -> Data) {
         guard data.count == Zipper.Entry.DataDescriptor.size else { return nil }
         let signature: UInt32 = data.scanValue(start: 0)
         // The DataDescriptor signature is not mandatory so we have to re-arrange

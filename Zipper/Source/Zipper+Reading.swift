@@ -10,7 +10,7 @@ public extension Zipper {
     ///   - bufferSize: The maximum size of the read buffer and the decompression buffer (if needed).
     /// - Returns: The checksum of the processed content.
     /// - Throws: An error if the destination file cannot be written or the entry contains malformed content.
-    public func extract(_ entry: Zipper.Entry, to url: URL, bufferSize: UInt32 = defaultReadChunkSize) throws -> ZipperCRC32 {
+    func extract(_ entry: Zipper.Entry, to url: URL, bufferSize: UInt32 = defaultReadChunkSize) throws -> ZipperCRC32 {
         let fileManager = FileManager()
         var checksum = ZipperCRC32(0)
         switch entry.type {
@@ -55,7 +55,7 @@ public extension Zipper {
     ///   - consumer: A closure that consumes contents of `Zipper.Entry` as `Data` chunks.
     /// - Returns: The checksum of the processed content.
     /// - Throws: An error if the destination file cannot be written or the entry contains malformed content.
-    public func extract(_ entry: Zipper.Entry, bufferSize: UInt32 = defaultReadChunkSize, consumer: ZipperConsumerClosure) throws -> ZipperCRC32 {
+    func extract(_ entry: Zipper.Entry, bufferSize: UInt32 = defaultReadChunkSize, consumer: ZipperConsumerClosure) throws -> ZipperCRC32 {
         var checksum = ZipperCRC32(0)
         let localFileHeader = entry.localFileHeader
         fseek(self.archiveFile, entry.dataOffset, SEEK_SET)

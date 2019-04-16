@@ -4,21 +4,21 @@
 :mail: admin@meniny.cn
 :desc: a Effortless ZIP Handling in Swift
 :icon: {name}.png
-:version: 1.1.0
+:version: 1.2.0
 :na: N/A
 :ios: 9.0
 :macos: 10.11
 :watchos: 2.0
 :tvos: 9.0
 :linux: with `zlib`
-:xcode: 9.3
-:swift: 4.1
+:xcode: 10.2
+:swift: 5
 :license: MIT
 :sep: %20%7C%20
 :platform: iOS{sep}macOS{sep}watchOS{sep}tvOS{sep}Linux
 = Meet `{name}`
 {author} <{mail}>
-v{version}, 2018-05-16
+v{version}, 2019-04-16
 
 [subs="attributes"]
 ++++

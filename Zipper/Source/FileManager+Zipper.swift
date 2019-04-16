@@ -2,7 +2,7 @@
 import Foundation
 
 public extension FileManager {
-    public typealias CentralDirectoryStructure = Zipper.Entry.CentralDirectoryStructure
+    typealias CentralDirectoryStructure = Zipper.Entry.CentralDirectoryStructure
 
     /// Zips the file or direcory contents at the specified source URL to the destination URL.
     ///
@@ -17,7 +17,7 @@ public extension FileManager {
     ///   - shouldKeepParent: Indicates that the directory name of a source item should be used as root element
     ///                       within the archive. Default is `true`.
     /// - Throws: Throws an error if the source item does not exist or the destination URL is not writable.
-    public func zip(item sourceURL: URL, to destinationURL: URL, shouldKeepParent: Bool = true) throws {
+    func zip(item sourceURL: URL, to destinationURL: URL, shouldKeepParent: Bool = true) throws {
         guard !self.fileExists(atPath: destinationURL.path) else {
             throw NSError(domain: NSCocoaErrorDomain, code: CocoaError.fileWriteFileExists.rawValue,
                           userInfo: [NSFilePathErrorKey: destinationURL.path])
@@ -34,7 +34,7 @@ public extension FileManager {
     ///   - sourceURL: The file URL pointing to an existing ZIP file.
     ///   - destinationURL: The file URL that identifies the destination of the unzip operation.
     /// - Throws: Throws an error if the source item does not exist or the destination URL is not writable.
-    public func unzip(item sourceURL: URL, to destinationURL: URL) throws {
+    func unzip(item sourceURL: URL, to destinationURL: URL) throws {
         guard let archive = Zipper(url: sourceURL, accessMode: .read) else {
             throw Zipper.ArchiveError.unreadableArchive
         }
@@ -43,14 +43,14 @@ public extension FileManager {
 
     // MARK: - Helpers
 
-    public func createParentDirectoryStructure(for url: URL) throws {
+    func createParentDirectoryStructure(for url: URL) throws {
         let parentDirectoryURL = url.deletingLastPathComponent()
         if !self.fileExists(atPath: parentDirectoryURL.path) {
             try self.createDirectory(at: parentDirectoryURL, withIntermediateDirectories: true, attributes: nil)
         }
     }
 
-    public class func attributes(from centralDirectoryStructure: CentralDirectoryStructure) -> [FileAttributeKey : Any] {
+    class func attributes(from centralDirectoryStructure: CentralDirectoryStructure) -> [FileAttributeKey : Any] {
         var attributes = [.posixPermissions: defaultPermissions,
                           .modificationDate: Date()] as [FileAttributeKey : Any]
         let versionMadeBy = centralDirectoryStructure.versionMadeBy
@@ -65,7 +65,7 @@ public extension FileManager {
         return attributes
     }
 
-    public class func permissions(for externalFileAttributes: UInt32, osType: Zipper.Entry.OSType) -> UInt16 {
+    class func permissions(for externalFileAttributes: UInt32, osType: Zipper.Entry.OSType) -> UInt16 {
         switch osType {
         case .unix, .osx:
             let permissions = mode_t(externalFileAttributes >> 16) & (~S_IFMT)
@@ -75,7 +75,7 @@ public extension FileManager {
         }
     }
 
-    public class func externalFileAttributesForEntry(of type: Zipper.Entry.EntryType, permissions: UInt16) -> UInt32 {
+    class func externalFileAttributesForEntry(of type: Zipper.Entry.EntryType, permissions: UInt16) -> UInt32 {
         var typeInt: UInt16
         switch type {
         case .file:
@@ -90,7 +90,7 @@ public extension FileManager {
         return externalFileAttributes
     }
 
-    public class func permissionsForItem(at URL: URL) throws -> UInt16 {
+    class func permissionsForItem(at URL: URL) throws -> UInt16 {
         let fileManager = FileManager()
         let entryFileSystemRepresentation = fileManager.fileSystemRepresentation(withPath: URL.path)
         var fileStat = stat()
