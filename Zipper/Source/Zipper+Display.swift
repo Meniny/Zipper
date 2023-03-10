@@ -5,7 +5,6 @@ enum CompressedFileType {
     case stop
 }
 
-
 extension Zipper {
     
     public enum OSType: UInt {
@@ -51,7 +50,7 @@ extension Zipper {
         return String(data:centralDirectoryStructure.fileNameData, encoding: encoding) ?? ""
     }
     
-    public func generateStructure() ->  AnyIterator<CompressedFileType> {
+    func createStructure() ->  AnyIterator<CompressedFileType> {
         let endOfCentralDirectoryRecord = self.endOfCentralDirectoryRecord
         var directoryIndex = Int(endOfCentralDirectoryRecord.offsetToStartOfCentralDirectory)
         var i = 0
@@ -71,11 +70,11 @@ extension Zipper {
             let entryType = self.getEntryType(centralDirectoryStructure: centralDirStruct)
             if entryType == .directory {
                 let folderPath = self.extractPath(centralDirectoryStructure: centralDirStruct)
-                let folderSize = centralDirStruct.uncompressedSize.toString()
+                let folderSize = String(centralDirStruct.uncompressedSize)
                 return .folder(path: folderPath, size: folderSize)
             } else if entryType == .file {
                 let filePath = self.extractPath(centralDirectoryStructure: centralDirStruct)
-                let fileSize = centralDirStruct.uncompressedSize.toString()
+                let fileSize = String(centralDirStruct.uncompressedSize)
                 return .file(path: filePath, size: fileSize)
             } else {
                 return CompressedFileType.none
